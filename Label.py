@@ -58,7 +58,7 @@ class Label:
         self._caption = caption
 
         
-    def set_background(self,r,g,b):
+    def set_background(self,r=255,g=255,b=255):
         """pygamegui.Label.set_background(self, r, g, b)"""
         self._color[0] = r
         self._color[1] = g

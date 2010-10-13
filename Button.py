@@ -112,9 +112,10 @@ class Button:
         """pygamegui.Button.check_position(self,position):return bool"""
         loc = self.get_location()
         
-        if (position[0] >= loc[0] and position[0] <= (loc[0] \
-           + self._size[0])) and (position[1] >= loc[1] \
-           and position[1] <= (loc[0] + self._size[1])):
+        if (position[0] >= self._location[0] and position[0] <= \
+            (self._location[0]+self._size[0])) and (position[1] >= \
+            self._location[1] and position[1] <= (self._location[1] \
+            + self._size[1])):
             return True
             
         return False
